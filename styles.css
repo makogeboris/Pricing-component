@@ -187,7 +187,7 @@ h1 {
 
 .card__price {
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: clamp(3rem, 15vw, 4.5rem);
   line-height: 99%;
   letter-spacing: -0.135rem;
   color: #4a4d60;
@@ -272,11 +272,11 @@ h1 {
 }
 
 .label--annually {
-  padding-right: 11px;
+  padding-right: 0.6875rem;
 }
 
 .label--monthly {
-  padding-left: 11px;
+  padding-left: 0.6875rem;
 }
 
 .annually {
@@ -293,16 +293,12 @@ h1 {
   display: none;
 }
 
-/* .show {
-  display: none;
-} */
-
-@media screen and (min-width: 62.5rem) {
+@media screen and (min-width: 44.375rem) {
   body {
     background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
     background-position: -9vw bottom, right top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 34vw, 27vw;
+    background-size: 32vw, 27vw;
     padding: 4.4375rem 1.5rem 6.4375rem;
   }
 
@@ -321,6 +317,10 @@ h1 {
   .card--blue {
     min-height: 31.3125rem;
     justify-content: center;
+  }
+
+  .card__price {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
   }
 }
 
