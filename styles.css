@@ -293,7 +293,7 @@ h1 {
   display: none;
 }
 
-@media screen and (min-width: 44.375rem) {
+@media screen and (min-width: 48rem) {
   body {
     background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
     background-position: -9vw bottom, right top;
