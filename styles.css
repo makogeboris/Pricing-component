@@ -114,13 +114,13 @@ body {
   background-repeat: no-repeat;
   background-position: 50vw -8vw;
   background-size: 78vw;
-  padding: 64px 24px 71px;
+  padding: 4rem 1.5rem 4.4375rem;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 2rem;
+  line-height: 2.4375rem;
   text-align: center;
   color: #6e728e;
 }
@@ -140,7 +140,7 @@ h1 {
 
 .switcher__label {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 187%;
   color: #6e728e;
 }
@@ -157,20 +157,20 @@ h1 {
 }
 
 .pricing-wrapper {
-  margin-top: 80px;
+  margin-top: 5rem;
   display: grid;
-  row-gap: 32px;
+  row-gap: 2rem;
 }
 
 .card {
   background: #ffffff;
-  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
-  border-radius: 10px;
+  box-shadow: 0 1.25rem 2.5rem rgba(212, 210, 244, 0.5);
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .card--blue {
@@ -179,7 +179,7 @@ h1 {
 
 .card__heading {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 156%;
   color: #6e728e;
   margin-bottom: 1.5rem;
@@ -187,19 +187,19 @@ h1 {
 
 .card__price {
   font-weight: 700;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 99%;
-  letter-spacing: -2.16px;
+  letter-spacing: -0.135rem;
   color: #4a4d60;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .dollar {
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 2.5rem;
+  line-height: 3.0625rem;
   letter-spacing: -1.2px;
 }
 
@@ -211,10 +211,10 @@ h1 {
 
 .card__features li {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 187%;
   color: #6e728e;
-  padding: 13px;
+  padding: 0.8125rem;
   border-top: 1px solid #b3b5c6;
   border-bottom: 1px solid #b3b5c6;
 }
@@ -236,16 +236,16 @@ h1 {
 
 .btn {
   font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.8125rem;
+  line-height: 1;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.39286px;
   color: #ffffff;
   background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
-  border-radius: 6px;
-  padding: 14px;
+  border-radius: 0.375rem;
+  padding: 0.875rem;
   width: 100%;
   margin-top: 2rem;
   border: 1px solid transparent;
@@ -271,41 +271,6 @@ h1 {
   border-color: #ffffff;
 }
 
-.hidden {
-  display: none;
-}
-
-.show {
-  display: none;
-}
-
-@media screen and (min-width: 820px) {
-  body {
-    background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
-    background-position: -9vw bottom, right top;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 34vw, 27vw;
-    padding: 71px 24px 103px;
-  }
-
-  .pricing-wrapper {
-    margin: 64px auto 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1050px;
-    align-items: center;
-  }
-
-  .card {
-    max-width: 350px;
-    max-height: 453px;
-  }
-
-  .card--blue {
-    min-height: 501px;
-    justify-content: center;
-  }
-}
-
 .label--annually {
   padding-right: 11px;
 }
@@ -315,26 +280,61 @@ h1 {
 }
 
 .annually {
-  transform: translateX(20px);
+  transform: translateX(1.25rem);
   z-index: -1;
 }
 
 .monthly {
-  transform: translateX(-20px);
+  transform: translateX(-1.25rem);
   z-index: -1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .show {
+  display: none;
+} */
+
+@media screen and (min-width: 62.5rem) {
+  body {
+    background-image: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
+    background-position: -9vw bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 34vw, 27vw;
+    padding: 4.4375rem 1.5rem 6.4375rem;
+  }
+
+  .pricing-wrapper {
+    margin: 4rem auto 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 65.625rem;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 21.875rem;
+    max-height: 28.3125rem;
+  }
+
+  .card--blue {
+    min-height: 31.3125rem;
+    justify-content: center;
+  }
 }
 
 .price-toggle {
   position: relative;
   display: inline-block;
-  width: 56px;
-  height: 32px;
+  width: 3.5rem;
+  height: 2rem;
 }
 
 .price-toggle input {
   opacity: 0;
-  width: 56px;
-  height: 32px;
+  width: 3.5rem;
+  height: 2rem;
   position: absolute;
   z-index: 1;
   cursor: pointer;

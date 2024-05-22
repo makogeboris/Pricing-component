@@ -1,23 +1,18 @@
 "use strict";
 
-const toogle = document.getElementById("toggleBtn");
-const basic = document.getElementById("basic");
-const pro = document.getElementById("pro");
-const master = document.getElementById("master");
-const labelMonthly = document.querySelector(".label--monthly");
-const labelAnnually = document.querySelector(".label--annually");
-
-const showPrice = document.querySelectorAll(".show");
-const hidePrice = document.querySelectorAll(".hidden");
+const toggleBtn = document.getElementById("toggleBtn");
 
 function switchPrice() {
-  showPrice.forEach((price) => {
-    price.classList.add("show");
-  });
+  document.querySelectorAll(".card__price").forEach((priceContainer) => {
+    const showPrice = priceContainer.querySelector(".show");
+    const hiddenPrice = priceContainer.querySelector(".hidden");
 
-  hidePrice.forEach((price) => {
-    price.classList.remove("hidden");
+    showPrice.classList.remove("show");
+    showPrice.classList.add("hidden");
+
+    hiddenPrice.classList.remove("hidden");
+    hiddenPrice.classList.add("show");
   });
 }
 
-toogle.addEventListener("click", switchPrice);
+toggleBtn.addEventListener("click", switchPrice);
